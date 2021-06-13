@@ -1,0 +1,108 @@
+.wrapper {
+    height: 200px;
+    overflow-x: auto;
+    width: 500px;
+    margin-top: 30px;
+}
+
+table {
+    margin-bottom: 0;
+}
+
+caption, th, p {
+    font-size: x-large;
+}
+
+caption {
+    text-align: left;
+    position: absolute;
+    z-index: 99;
+    margin-top: -68px;
+    display: table-header-group;
+}
+
+th {
+    background: rgba(255, 225, 225);
+    position: sticky;
+    top: 0;
+}
+
+th:first-of-type, td:first-of-type {
+    left: 0;
+    position: sticky;
+}
+
+th:first-of-type {
+    z-index: 2;
+}
+
+td:first-of-type {
+    background: rgba(225, 255, 225);
+    z-index: 1;
+}
+
+th, td p {
+    white-space: nowrap;
+}
+
+td p {
+    margin-top: 0;
+}
+
+td p:last-child {
+    margin-bottom: 0;
+}
+
+th, td {
+    border-bottom: 1px dashed red;
+}
+
+/ html starts here /
+
+<p>paragraph 1</p>
+<p>paragraph 2</p>
+<p>paragraph 3</p>
+<p>paragraph 4</p>
+<p>paragraph 5</p>
+<div class="outer">
+<div class="wrapper">
+    <table>
+        <caption>Caption</caption>
+        <thead>
+            <tr>
+                <th>Column 1 aaa aaa aaa</th>
+                <th>Column 2 bbb bbb bbb</th>
+                <th>Column 3 ccc ccc ccc</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><p>Column 1 aaa aaa aaa</p></td>
+                <td><p>Column 2 bbb bbb bbb</p><p>Column 2 bbb bbb bbb</p></td>
+                <td><p>Column 3 ccc ccc ccc</p></td>
+            </tr>
+            <tr>
+                <td><p>Column 1 aaa aaa aaa</p></td>
+                <td><p>Column 2 bbb bbb bbb</p></td>
+                <td><p>Column 3 ccc ccc ccc</p></td>
+            </tr>
+            <tr>
+                <td><p>Column 1 aaa aaa aaa</p></td>
+                <td><p>Column 2 bbb bbb bbb</p></td>
+                <td><p>Column 3 ccc ccc ccc</p></td>
+            </tr>
+            <tr>
+                <td><p>Column 1 aaa aaa aaa</p></td>
+                <td><p>Column 2 bbb bbb bbb</p></td>
+                <td><p>Column 3 ccc ccc ccc</p></td>
+            </tr>
+            <tr>
+                <td><p>Column 1 aaa aaa aaa</p></td>
+                <td><p>Column 2 bbb bbb bbb</p></td>
+                <td><p>Column 3 ccc ccc ccc</p></td>
+            </tr>
+        </tbody>
+        
+    </table>
+</div>
+</div>
